@@ -22,5 +22,3 @@ This project was built to reduce response delays and improve communication effic
 - Pydantic
 - SMTP / Email API
 - Agentic workflow design
-
-## 📂 Project Structure
