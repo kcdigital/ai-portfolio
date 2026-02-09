@@ -22,3 +22,46 @@ This project was built to reduce response delays and improve communication effic
 - Pydantic
 - SMTP / Email API
 - Agentic workflow design
+
+## 🧭 System Workflow
+
+Below is a simplified architecture of the multi-agent email automation system:
+
+Client Inquiry
+(Purchase / Collaboration)
+            │
+            ▼
+     Intent Understanding
+            │
+            ▼
+   ┌──────────────────────┐
+   │  Multi-Agent Drafting │
+   └──────────────────────┘
+      │        │        │
+      ▼        ▼        ▼
+   Agent 1  Agent 2  Agent 3
+      │        │        │
+      └────────┴────────┘
+               │
+               ▼
+        LLM Evaluation Agent
+        (Quality Scoring +
+         Best Draft Selection)
+               │
+               ▼
+        Selected Email Draft
+               │
+      ┌────────┴─────────┐
+      ▼                  ▼
+Subject Writing      Format Refining
+    Agent               Agent
+      │                  │
+      └────────┬─────────┘
+               ▼
+          Final Email
+               │
+               ▼
+          Email API
+               │
+               ▼
+           Sent Out
