@@ -26,7 +26,7 @@ This project was built to reduce response delays and improve communication effic
 ## 🧭 System Workflow
 
 Below is a simplified architecture of the multi-agent email automation system:
-
+```
 Client Inquiry
 (Purchase / Collaboration)
             │
@@ -65,3 +65,4 @@ Subject Writing      Format Refining
                │
                ▼
            Sent Out
+```
